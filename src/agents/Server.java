@@ -44,11 +44,11 @@ public class Server extends Agent {
                                 doDelete();
                             } else if (AGENTNUMBER > random) {
                                 messageAcl.addReceiver(new AID(aclMessage.getSender().getLocalName(), AID.ISLOCALNAME));
-                                messageAcl.setContent("Your number "+AGENTNUMBER+" is too high, try again");
+                                messageAcl.setContent("Your number "+AGENTNUMBER+", try lower");
                                 send(messageAcl);
                             } else {
                                 messageAcl.addReceiver(new AID(aclMessage.getSender().getLocalName(), AID.ISLOCALNAME));
-                                messageAcl.setContent("Your number "+AGENTNUMBER+" is too high, try again");
+                                messageAcl.setContent("Your number "+AGENTNUMBER+", try higher");
                                 send(messageAcl);
                             }
                         } catch (Exception e) {

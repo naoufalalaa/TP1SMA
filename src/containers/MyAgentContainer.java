@@ -71,7 +71,6 @@ public class MyAgentContainer extends Application {
             GuiEvent guiEvent = new GuiEvent(this, 1);
             guiEvent.addParameter(message);
             myAgent.onGuiEvent(guiEvent);
-            list.add("My Try : "+message);
         });
     }
 
